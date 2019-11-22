@@ -11,7 +11,7 @@ const Nav = props => (
         <a href="/">Clicky Game</a>
       </li>
       <NavMessage score={props.score} topScore={props.topScore} />
-      <li>
+      <li className="score">
         Score: {props.score} | Top Score: {props.topScore}
       </li>
     </ul>
