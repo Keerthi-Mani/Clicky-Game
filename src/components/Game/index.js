@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Nav from "../Nav";
 import Header from "../Header";
 import Container from "../Container";
@@ -6,7 +6,7 @@ import ClickItem from "../ClickItem";
 import Footer from "../Footer";
 import data from "../../data.json";
 
-class Game extends React.Component {
+class Game extends Component {
   state = {
     data,
     score: 0,
@@ -72,18 +72,18 @@ class Game extends React.Component {
   render() {
     return (
       <div>
-        <Nav score={this.state.score} topScore={this.state.topsScore} />
+        <Nav score={this.state.score} topScore={this.state.topScore} />
         <Header />
         <Container>
-          {this.state.data.map(item => {
+          {this.state.data.map(item => (
             <ClickItem
               key={item.id}
               id={item.id}
-              shake={!this.state.score && this.state.topScore}
               handleClick={this.handleItemClick}
+              shake={!this.state.score && this.state.topScore}
               image={item.image}
-            />;
-          })}
+            />
+          ))}
         </Container>
         <Footer />
       </div>
