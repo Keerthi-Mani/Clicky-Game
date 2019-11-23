@@ -4,15 +4,13 @@
   "homepage": " https://keerthi-mani.github.io/Clicky-Game/",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
