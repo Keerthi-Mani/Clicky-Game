@@ -26,7 +26,7 @@
   },
   {
     "id": 6,
-    "image": "../assets/Raichu.jpeg",
+    "image": "./assets/Raichu.jpeg",
     "clicked": false
   },
   {
